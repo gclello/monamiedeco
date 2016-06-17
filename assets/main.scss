@@ -1,0 +1,64 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Fonts
+$base-font-family:    Georgia, Times, sans-serif;
+$base-font-size:      1.0rem;
+$base-font-weight:    400;
+$base-line-height:    1.5;
+
+$menu-font-family:    "Helvetica Neue", Helvetica, Arial, Sans-serif;
+$menu-font-size:      0.750rem;
+$menu-font-weight:    500;
+$menu-letter-spacing: 0.063rem;
+
+// Colors
+$text-color:          #000000;
+$bg-color:            #ffffff;
+$card-bg-color:       #f7f7f7;
+$brand-color:         #b03d11;
+$brand-color2:        #7b2a4a;
+$brand-color3:        #335d69;
+$brand-color-light:   lighten($brand-color, 10%);
+$brand-color2-light:  lighten($brand-color2, 10%);
+$brand-color-dark:    darken($brand-color, 10%);
+$brand-color2-dark:   darken($brand-color2, 10%);
+
+// Spacing
+$spacing-unit:        1.250rem;
+$sidebar-width:       15.625rem;
+
+// Images
+$logo-img:           "{{ site.baseurl }}/assets/logo-web.png";
+$logo-height:        65px;
+$logo-width:         320px;
+
+$chandelier-img:     "{{ site.baseurl }}/assets/chandelier.jpg";
+$author-img:         "{{ site.baseurl }}/assets/sabry.png";
+
+// Devices
+$on-sm:              34rem;
+$on-md:              48rem;
+$on-lg:              62rem;
+$on-xl:              75rem;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout"
+;

@@ -1,20 +1,29 @@
-<!DOCTYPE html>
-<html>
+---
+layout: page
+---
 
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+<div class="row">
+  <div id="banner" class="col-xs-12">Banner</div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="separator"></div>
+  </div>
+</div>
+<div class="row">
+  <div id="content-sidebar-wrapper">
+    <div id="content">
+      {{ content }}
     </div>
-
-    {% include footer.html %}
-
-  </body>
-
-</html>
+    <div id="sidebar">
+      <p class="author-img">
+        <a href="{{ "sobre" | prepend: site.baseurl | prepend: "/" }}">
+          <img alt="{{ site.author }}" src="{{ site.authorimg | prepend: site.baseurl | prepend: "/" }}" />
+        </a>
+      </p>
+      <p>
+        {{ site.authordesc }}
+      </p>
+    </div>
+  </div>
+</div>
