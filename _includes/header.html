@@ -1,35 +1,43 @@
 <header id="header" class="row">
-    <div id="title" class="col-md-6">
-      <h1>
-        <a href="{{ site.baseurl | prepend: "/" }}">
-          Mon Amie Déco
-        </a>
-      </h1>
-    </div>
-    <nav class="col-md-6">
-      <ul>
-        <li>
-            <span></span>
-            <a href="{{ site.baseurl | prepend: "/" }}">
-              Início
-            </a>
-        </li>
-        <li>
+  <div id="title" class="col-md-6">
+  {% if page.home %}
+    <h1>
+  {% else %}
+    <p>
+  {% endif %}
+      <a href="{{ site.baseurl | prepend: "/" }}">
+        {{ site.title }}
+      </a>
+  {% if page.home %}
+    </h1>
+  {% else %}
+    </p>
+  {% endif %}
+  </div>
+  <nav class="col-md-6">
+    <ul>
+      <li>
           <span></span>
-          <a href="{{ "sobre" | prepend: site.baseurl | prepend: "/" }}">
-            Sobre
+          <a href="{{ site.baseurl | prepend: "/" }}">
+            Início
           </a>
-        </li>
-        <li>
-          <a href="{{ "servicos" | prepend: site.baseurl | prepend: "/" }}">
-            Serviços
-          </a>
-        </li>
-        <li>
-          <a href="{{ "contato" | prepend: site.baseurl | prepend: "/" }}">
-            Contato
-          </a>
-        </li>
-      </ul>
-    </nav>
+      </li>
+      <li>
+        <span></span>
+        <a href="{{ "sobre" | prepend: site.baseurl | prepend: "/" }}">
+          Sobre
+        </a>
+      </li>
+      <li>
+        <a href="{{ "servicos" | prepend: site.baseurl | prepend: "/" }}">
+          Serviços
+        </a>
+      </li>
+      <li>
+        <a href="{{ "contato" | prepend: site.baseurl | prepend: "/" }}">
+          Contato
+        </a>
+      </li>
+    </ul>
+  </nav>
 </header>
