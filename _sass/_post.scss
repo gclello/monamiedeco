@@ -1,0 +1,12 @@
+.post-card {
+  background-color: $card-bg-color;
+  margin-top: $spacing-unit;
+  padding-top: $spacing-unit;
+  padding-bottom: $spacing-unit;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+}
+
+article.post-card {
+  margin-top: 0;
+}
