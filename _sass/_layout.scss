@@ -171,14 +171,41 @@
     }
 }
 
-#socialfooter {
-  background-color: gray;
+#footerlogo {
+  a {
+    background-image: url($logo-img);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    height: $logo-height;
+    width: auto;
+    display: block;
+    text-indent: -9999px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+#footersocial {
   padding-top: $spacing-unit;
   padding-bottom: $spacing-unit;
 
   p {
     margin-top: 0;
     margin-bottom: 0;
+    text-align: center;
+  }
+
+  a span {
+    color: $brand-color;
+
+    &:hover {
+        color: $brand-color3;
+        text-decoration: none;
+    }
   }
 }
 
