@@ -3,6 +3,15 @@
   padding-right: 0;
 }
 
+.content-card {
+  background-color: $card-bg-color;
+  margin-top: $spacing-unit;
+  padding-top: $spacing-unit;
+  padding-bottom: $spacing-unit;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+}
+
 .separator {
   background-image: url($chandelier-img);
   margin-top: 0.375rem;
@@ -222,7 +231,7 @@
 }
 
 #contact {
-  .post-card {
+  .content-card {
     margin-top: 0;
   }
 
