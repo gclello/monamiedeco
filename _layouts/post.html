@@ -10,7 +10,7 @@ layout: default
       </time>
       {% if site.author %}
       por
-      <a href="{{ site.authorurl }}">
+      <a href="{{ "sobre" | prepend: "/" | prepend: site.baseurl }}">
         <span itemprop="author" itemscope itemtype="http://schema.org/Person">
           <span itemprop="name">
             {{ site.author }}

@@ -10,10 +10,9 @@ title: Mon Amie Déco
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Mon Amie Déco Arquitetura e Decoração: solucionando pequenos espaços
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/mad" # the subpath of your site, e.g. /blog
 url: "http://monamiedeco.com" # the base hostname & protocol for your site
 author: Sabrina Guimarães
-authorurl: /sobre
 authorimg: assets/sabry.png
 authordesc: |
   Sabrina Guimarães, arquiteta especializada em solucionar e otimizar pequenos

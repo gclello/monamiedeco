@@ -221,6 +221,16 @@
   }
 }
 
-#contact.post-card {
-  margin-top: 0;
+#contact {
+  .post-card {
+    margin-top: 0;
+  }
+
+  p {
+    margin-top: $spacing-unit;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }

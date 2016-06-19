@@ -2,7 +2,7 @@
 layout: page
 ---
 <p class="author-img">
-  <img alt="{{ site.author }}" src="{{ site.authorimg | prepend: site.baseurl | prepend: "/" }}" />
+  <img alt="{{ site.author }}" src="{{ site.authorimg | prepend: "/" | prepend: site.baseurl }}" />
 </p>
 
 {{ content }}

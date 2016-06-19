@@ -5,7 +5,7 @@
   {% else %}
     <p>
   {% endif %}
-      <a href="{{ site.baseurl | prepend: "/" }}">
+      <a href="{{ site.baseurl }}">
         {{ site.title }}
       </a>
   {% if page.home %}
@@ -18,23 +18,23 @@
     <ul>
       <li>
           <span></span>
-          <a href="{{ site.baseurl | prepend: "/" }}">
+          <a href="{{ prepend: "/" | prepend: site.baseurl }}">
             Início
           </a>
       </li>
       <li>
         <span></span>
-        <a href="{{ "sobre" | prepend: site.baseurl | prepend: "/" }}">
+        <a href="{{ "sobre" | prepend: "/" | prepend: site.baseurl }}">
           Sobre
         </a>
       </li>
       <li>
-        <a href="{{ "servicos" | prepend: site.baseurl | prepend: "/" }}">
+        <a href="{{ "servicos" | prepend: "/" | prepend: site.baseurl }}">
           Serviços
         </a>
       </li>
       <li>
-        <a href="{{ "contato" | prepend: site.baseurl | prepend: "/" }}">
+        <a href="{{ "contato" | prepend: "/" | prepend: site.baseurl }}">
           Contato
         </a>
       </li>
