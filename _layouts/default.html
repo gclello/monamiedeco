@@ -2,7 +2,11 @@
 layout: page
 ---
 <div class="row">
+{% if page.home %}
   <div id="banner" class="col-xs-12">Banner</div>
+{% else %}
+  <div id="banner-sm" class="col-xs-12">Banner</div>
+{% endif %}
 </div>
 <div class="row">
   <div class="col-xs-12">

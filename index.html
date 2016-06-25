@@ -4,17 +4,43 @@ home: true
 ---
 {% for post in site.posts %}
 <div class="content-card">
+
   <h2>
-    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    <a href="{% include site-url.html %}{{ post.url }}">{{ post.title }}</a>
   </h2>
 
-  <div>
-    <p>
-      {{ post.excerpt }}
-      <a href="{{ post.url | prepend: site.baseurl }}">
-        Continue lendo &raquo;
+  <p>
+    <span class="post-meta">
+      <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ post.date | date: "%e/%m/%Y" }},
+      </time>
+      {% if site.author %}
+      por
+      <a href="{% include site-url.html %}/sobre">
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <span itemprop="name">
+            {{ site.author }}
+          </span>
+        </span>
       </a>
-    </p>
+      {% endif %}
+    </span>
+  </p>
+
+  <div>
+    <a class="post-thumb" href="{% include site-url.html %}{{ post.url }}">
+      <img alt="{{ post.title }}" src="{% include site-url.html %}/assets/posts/{{ post.thumbimg }}" />
+    </a>
+
+    <div>
+      <p>
+        {{ post.excerpt }}
+        <a href="{% include site-url.html %}{{ post.url }}">
+          Continue lendo &raquo;
+        </a>
+      </p>
+    </div>
   </div>
+
 </div>
 {% endfor %}

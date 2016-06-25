@@ -4,6 +4,7 @@ description: >
   Mon Amie Déco Arquitetura e Decoração: solucionando pequenos espaços
 url: http://monamiedeco.com
 baseurl: ""
+postimgpath: "/assets/posts"
 fburl: https://www.facebook.com/tuttideli
 
 # Post settings

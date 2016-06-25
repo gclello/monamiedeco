@@ -2,8 +2,36 @@ article.content-card {
   margin-top: 0;
 }
 
+.post-thumb {
+  float: left;
+  margin-right: $spacing-unit;
+  margin-bottom: $spacing-unit;
+
+  img {
+    width: 440px; /* convert to rem */
+  };
+}
+
+.post-header {  
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
 .post-share {
   display: block;
-  margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.post-content {
+  font-size: $post-font-size;
+  
+  h2 {
+      margin-top: $spacing-unit * 2.5;
+  }
+  
+  img {
+    width: 860px;
+    margin-top: 1rem;
+  }
 }
