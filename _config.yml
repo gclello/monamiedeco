@@ -1,9 +1,7 @@
 # Site settings
 title: Mon Amie Déco
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   Mon Amie Déco Arquitetura e Decoração: solucionando pequenos espaços
-
-# URLs
 url: http://monamiedeco.com
 baseurl: ""
 fburl: https://www.facebook.com/tuttideli
