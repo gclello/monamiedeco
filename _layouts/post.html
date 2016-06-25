@@ -11,7 +11,7 @@ layout: default
       </time>
       {% if site.author %}
       por
-      <a href="{{ "sobre" | prepend: "/" | prepend: site.baseurl }}">
+      <a href="{% include site-url.html %}/sobre">
         <span itemprop="author" itemscope itemtype="http://schema.org/Person">
           <span itemprop="name">
             {{ site.author }}
@@ -21,7 +21,7 @@ layout: default
       {% endif %}
     </span>
     <p>
-      <a href="#disqus_thread">
+      <a href="{% include site-url.html %}{{ page.url }}/#disqus_thread">
         <span class="disqus-comment-count" data-disqus-identifier="{{ page.id }}"></span>
       </a>
     </p>
@@ -42,7 +42,7 @@ layout: default
      */
 
     var disqus_config = function () {
-        this.page.url = "{{ page.url | prepend: site.baseurl | prepend: site.url }}";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.url = "{% include site-url.html %}{{ page.url }}";  // Replace PAGE_URL with your page's canonical URL variable
         this.page.identifier = "{{ page.id }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
         this.page.title = "{{ page.title }}";
     };

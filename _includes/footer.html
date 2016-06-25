@@ -2,7 +2,7 @@
   <div class="row">
     <div id="footerlogo" class="col-xs-12">
       <p>
-        <a href="{{ site.baseurl }}">
+        <a href="{% include site-url.html %}/">
           {{ site.title }}
         </a>
       </p>
@@ -20,19 +20,19 @@
         <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
         <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
         <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-        <a href="{{ "contato" | prepend: "/" | prepend: site.baseurl }}">
+        <a href="{% include site-url.html %}/contato">
           <i class="fa fa-envelope" aria-hidden="true"></i>
         </a>
-        <a href="{{ "contato" | prepend: "/" | prepend: site.baseurl }}">
+        <a href="{% include site-url.html %}/contato">
           <i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
         </a>
-        <a href="{{ "contato" | prepend: "/" | prepend: site.baseurl }}">
+        <a href="{% include site-url.html %}/contato">
           <span class="fa-stack fa-lg">
             <i class="fa fa-circle-o fa-stack-2x"></i>
             <i class="fa fa-envelope fa-stack-1x"></i>
           </span>
         </a>
-        <a href="{{ "contato" | prepend: "/" | prepend: site.baseurl }}">
+        <a href="{% include site-url.html %}/contato">
           <span class="fa-stack fa-2x">
             <i class="fa fa-circle-o fa-stack-2x"></i>
             <i class="fa fa-envelope fa-stack-1x"></i>
@@ -45,7 +45,7 @@
     <div id="copyright" class="col-xs-12">
       <p>
         &copy; 2016
-        <a href="{{ site.baseurl }}">
+        <a href="{% include site-url.html %}/">
           Mon Amie Déco
         </a>
         . Todos os direitos reservados.

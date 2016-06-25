@@ -16,8 +16,8 @@ layout: page
     </div>
     <div id="sidebar">
       <p class="author-img">
-        <a href="{{ "sobre" | prepend: "/" | prepend: site.baseurl }}">
-          <img alt="{{ site.author }}" src="{{ site.authorimg | prepend: "/" | prepend: site.baseurl }}" />
+        <a href="{% include site-url.html %}/sobre">
+          <img alt="{{ site.author }}" src="{% include site-url.html %}/{{ site.authorimg }}" />
         </a>
       </p>
       <p>
