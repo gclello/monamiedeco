@@ -5,7 +5,7 @@
   {% else %}
     <p>
   {% endif %}
-      <a href="{{ prepend: "/" | prepend: site.baseurl }}">
+      <a href="{{ "/" | prepend: site.baseurl }}">
         {{ site.title }}
       </a>
   {% if page.home %}
@@ -18,7 +18,7 @@
     <ul>
       <li>
           <span></span>
-          <a href="{{ prepend: "/" | prepend: site.baseurl }}">
+          <a href="{{ "/" | prepend: site.baseurl }}">
             Início
           </a>
       </li>
