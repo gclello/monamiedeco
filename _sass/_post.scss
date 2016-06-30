@@ -32,6 +32,49 @@ article.content-card {
   
   img {
     width: 860px;
-    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
+}
+
+.attribution {
+  position: relative;
+  font-size: 0.875rem;
+  color: white;
+}
+
+.attribution a {
+  color: white;
+}
+
+.attribution a:hover{
+  text-decoration: underline;
+}
+
+.attribution img {
+  position: relative;
+  z-index: 3;
+}
+.attribution div {
+  z-index: 4;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,.4);
+  width: 100%;
+  
+  text-align: right;
+  padding-right: 20px;
+  margin-bottom: 1rem;
+}
+
+@include media-query($on-md) {
+  .attribution div {
+    z-index: 2;
+  }
+}
+
+.attribution img:hover {
+  z-index:1;
+}
+.attribution div:hover {
+  z-index:4;
 }

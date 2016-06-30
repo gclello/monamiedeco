@@ -1,0 +1,97 @@
+integrada:
+  file: integrada.jpg
+  desc: Cozinha integrada à sala
+  author: Imobiliária THÁ
+  link: https://www.flickr.com/photos/59013156@N08/5462652569/
+  license: CCBY
+
+cozinha_planejamento:
+  file: cozinha_planejamento.jpg
+  desc: Planejando sua cozinha integrada
+  author: bainesmcg
+  link: https://www.flickr.com/photos/87462844@N00/5983242010/
+  license: CCBY
+
+integrada_balcao:
+  file: integrada_balcao.jpg
+  desc: Balcão separando a cozinha da sala
+  author: Arthur Gomez
+  link: https://www.flickr.com/photos/urbanthink/11468229236/
+  license: CCBYND
+  
+integrada_mesa:
+  file: integrada_mesa.jpg
+  desc: Mesa separando a cozinha da sala
+  author: Ohio Redevelopment Projects - ODSA
+  link: https://www.flickr.com/photos/63837784@N08/25127703641/
+  license: CCBY
+  
+interacao_sala_cozinha:
+  file: interacao_sala_cozinha.jpg
+  desc: Cozinha em harmonia com a sala
+  author: Corona Mejora Tu Vida
+  link: https://www.flickr.com/photos/disenoyarquitectura/8120102104/
+  license: CCBY
+  
+integrada_piso_continuo:
+  file: integrada_piso_continuo.png
+  desc: Continuidade do piso cozinha/sala
+  author: charlotte holmes
+  link: https://www.flickr.com/photos/rogueinteriordesigns/4843832442/
+  license: CCBYSA
+
+integrada_piso_separado:
+  file: integrada_piso_separado.jpg
+  desc: Soleira para separar dois tipos de piso
+  author: Iain and Sarah
+  link: https://www.flickr.com/photos/sarahandiain/16022943114/
+  license: CCBY
+  
+integrada_detalhes_vermelho:
+  file: integrada_detalhes_vermelho.jpg
+  desc: Detalhes em vermelho realçando o ambiente
+  author: Nancy Hugo, CKD
+  link: https://www.flickr.com/photos/nancyhugo/421729964/
+  license: CCBYND
+  
+integrada_papel_parede:
+  file: integrada_papel_parede.jpg
+  desc: Um charme a mais com a parede cheia de detalhes
+  author: Susan Serra, CKD
+  link: https://www.flickr.com/photos/kitchendesigner/1423642347/
+  license: CCBYSA
+
+cozinha_armario_branco_vermelho:
+  file: cozinha_armario_branco_vermelho.jpg
+  desc: Armários de cozinha lisos, claros e sem puxadores, em harmonia com o vermelho
+  author: Susan Serra, CKD
+  link: https://www.flickr.com/photos/kitchendesigner/1423733669/
+  license: CCBYSA
+  
+cozinha_coifa:
+  file: cozinha_coifa.jpg
+  desc: A coifa é fundamental para evitar que o cheiro da comida disperse
+  author: charlotte holmes
+  link: https://www.flickr.com/photos/rogueinteriordesigns/4843832890/
+  license: CCBYSA
+  
+integrada_porta_correr:
+  file: integrada_porta_correr.jpg
+  desc: Porta de correr de vidro separando a cozinha da sala sem perder visibilidade
+  author: Mikhail Golub
+  link: https://www.flickr.com/photos/golub/11534598954/
+  license: CCBY
+  
+integrada_iluminacao_natural:
+  file: integrada_iluminacao_natural.jpg
+  desc: Quanto mais iluminação natural, melhor!
+  author: Jeremy Levine
+  link: https://www.flickr.com/photos/jeremylevinedesign/3240119298/
+  license: CCBY
+  
+cozinha_armario_iluminacao:
+  file: cozinha_armario_iluminacao.jpg
+  desc: Iluminação dos armários na cozinha
+  author: William Warby
+  link: https://www.flickr.com/photos/wwarby/9200349226/
+  license: CCBY
