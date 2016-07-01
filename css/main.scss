@@ -20,9 +20,11 @@ $post-font-size:      1.125rem;
 $text-color:          #000000;
 $bg-color:            #ffffff;
 $card-bg-color:       #f7f7f7;
+$banner-bg-color:     darken($card-bg-color, 7%);
 $brand-color:         #b03d11;
 $brand-color2:        #7b2a4a;
 $brand-color3:        #335d69;
+$brand-color4:        #5c504a;
 $brand-color-light:   lighten($brand-color, 10%);
 $brand-color2-light:  lighten($brand-color2, 10%);
 $brand-color-dark:    darken($brand-color, 10%);
@@ -39,6 +41,7 @@ $logo-width:         320px;
 
 $chandelier-img:     "{% include site-url.html %}/assets/chandelier.jpg";
 $author-img:         "{% include site-url.html %}/assets/sabry.png";
+$banner-img:         "{% include site-url.html %}/assets/banner.png";
 
 // Devices
 $on-sm:              34rem;
@@ -46,22 +49,16 @@ $on-md:              48rem;
 $on-lg:              62rem;
 $on-xl:              75rem;
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
 @mixin media-query($device) {
-    @media screen and (min-width: $device) {
-        @content;
-    }
+  @media screen and (min-width: $device) {
+    @content;
+  }
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "post"
+  "base",
+  "layout",
+  "post",
+  "banner"
 ;

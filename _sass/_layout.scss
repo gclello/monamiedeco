@@ -123,16 +123,6 @@
   }
 }
 
-#banner {
-  background-color: gray;
-  height: 21.875rem;
-}
-
-#banner-sm {
-  background-color: gray;
-  height: 10rem;
-}
-
 #content-sidebar-wrapper {
   position: relative;
 }
@@ -169,7 +159,7 @@
   }
 }
 
-@include media-query($on-md) {
+@include media-query($on-lg) {
     #content {
         margin-left: $sidebar-width + $spacing-unit;
         width: auto;

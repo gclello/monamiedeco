@@ -3,9 +3,9 @@ layout: page
 ---
 <div class="row">
 {% if page.home %}
-  <div id="banner" class="col-xs-12">Banner</div>
+    {% include banner.html %}
 {% else %}
-  <div id="banner-sm" class="col-xs-12">Banner</div>
+  <div class="banner-sm col-xs-12">Banner</div>
 {% endif %}
 </div>
 <div class="row">
