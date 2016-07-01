@@ -14,8 +14,7 @@ permalink: /:title
 author: Sabrina Guimarães
 authorimg: assets/sabry.png
 authordesc: |
-  Sabrina Guimarães, arquiteta especializada em solucionar e otimizar pequenos
-  espaços.
+  arquiteta especializada em solucionar e otimizar pequenos espaços.
 
 # Build settings
 markdown: kramdown

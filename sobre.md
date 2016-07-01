@@ -3,4 +3,4 @@ layout: about
 title: Sobre
 permalink: /sobre/
 ---
-{{ site.authordesc }}
+{{ site.author }}, {{ site.authordesc }}

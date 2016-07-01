@@ -21,10 +21,12 @@ layout: page
     <div id="sidebar">
       <p class="author-img">
         <a href="{% include site-url.html %}/sobre">
-          <img alt="{{ site.author }}" src="{% include site-url.html %}/{{ site.authorimg }}" />
+          <img alt="{{ site.author }}"
+               src="{% include site-url.html %}/{{ site.authorimg }}" />
         </a>
       </p>
       <p>
+        <a href="{% include site-url.html %}/sobre">{{ site.author }}</a>,
         {{ site.authordesc }}
       </p>
     </div>
