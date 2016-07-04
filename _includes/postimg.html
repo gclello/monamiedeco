@@ -1,15 +1,15 @@
 {% assign img = site.data.images[include.id] %}
 {% assign license = site.data.licenses[img.license] %}
 
-<div class="attribution">
+<div class="postimg">
   
   <img alt="{{ img.desc }}"
-       src="{% include siteurl.html %}{{ site.postimgpath }}/{{ img.file }}" />
+       src="{{ img.src }}" />
        
   <div>
     <span>
       {{ img.desc }} |
-      <a href="{{ img.link }}"
+      <a href="{{ img.href }}"
          target="_blank">foto por {{ img.author }}</a>
       |
       <a href="{{ license.link }}"

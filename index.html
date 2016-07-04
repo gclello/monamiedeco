@@ -28,10 +28,7 @@ home: true
   </p>
 
   <div>
-    <a class="post-thumb" href="{% include siteurl.html %}{{ post.url }}">
-      <img alt="{{ post.title }}" src="{% include siteurl.html %}/assets/posts/{{ post.thumbimg }}" />
-    </a>
-
+    {% include postthumb.html post=post %}
     <div>
       <p>
         {{ post.excerpt }}

@@ -1,0 +1,10 @@
+{% assign img = site.data.images[include.post.thumb] %}
+
+<div class="postthumb">
+  
+  <a href="{% include siteurl.html %}{{ include.post.url }}">
+    <img alt="{{ include.post.title }}"
+         src="{{ img.thumb }}" />
+  </a>
+    
+</div>
