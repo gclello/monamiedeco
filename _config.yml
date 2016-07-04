@@ -1,8 +1,9 @@
 # Site settings
-title: Mon Amie Déco
+title: Mon Amie Déco - Solucionando pequenos espaços
+name: Mon Amie Déco
 description: >
-  Mon Amie Déco Arquitetura e Decoração: solucionando pequenos espaços
-url: http://monamiedeco.com
+  Mon Amie Déco Arquitetura e Decoração: Solucionando pequenos espaços
+url: "http://monamiedeco.com"
 baseurl: ""
 postimgpath: "/assets/posts"
 fburl: https://www.facebook.com/tuttideli
