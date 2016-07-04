@@ -4,11 +4,35 @@
 {% include head.html %}
 
 <body>
-
   <div class="container">
+    {% include header.html %}
 
-  {{ content }}
+    <div class="row">
+    {% if page.home %}
+      {% include banner.html %}
+    {% endif %}
+      {% include optin.html %}
+    </div>
 
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="separator"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="separator"></div>
+      </div>
+    </div>
+
+    {% include footer.html %}
   </div>
 
   <!-- Bootstrap JS disabled because only the grid system is being used -->

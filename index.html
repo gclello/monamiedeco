@@ -6,7 +6,7 @@ home: true
 <div class="content-card">
 
   <h2>
-    <a href="{% include site-url.html %}{{ post.url }}">{{ post.title }}</a>
+    <a href="{% include siteurl.html %}{{ post.url }}">{{ post.title }}</a>
   </h2>
 
   <p>
@@ -16,7 +16,7 @@ home: true
       </time>
       {% if site.author %}
       por
-      <a href="{% include site-url.html %}/sobre">
+      <a href="{% include siteurl.html %}/sobre">
         <span itemprop="author" itemscope itemtype="http://schema.org/Person">
           <span itemprop="name">
             {{ site.author }}
@@ -28,14 +28,14 @@ home: true
   </p>
 
   <div>
-    <a class="post-thumb" href="{% include site-url.html %}{{ post.url }}">
-      <img alt="{{ post.title }}" src="{% include site-url.html %}/assets/posts/{{ post.thumbimg }}" />
+    <a class="post-thumb" href="{% include siteurl.html %}{{ post.url }}">
+      <img alt="{{ post.title }}" src="{% include siteurl.html %}/assets/posts/{{ post.thumbimg }}" />
     </a>
 
     <div>
       <p>
         {{ post.excerpt }}
-        <a href="{% include site-url.html %}{{ post.url }}">
+        <a href="{% include siteurl.html %}{{ post.url }}">
           Continue lendo &raquo;
         </a>
       </p>

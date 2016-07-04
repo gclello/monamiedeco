@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: base
 ---
-<p class="author-img">
-  <img alt="{{ site.author }}" src="{% include site-url.html %}/{{ site.authorimg }}" />
-</p>
-
-{{ content }}
+<div class="content-card">
+  <p class="author-img">
+    <img alt="{{ site.author }}" src="{% include siteurl.html %}/{{ site.authorimg }}" />
+  </p>
+  {{ content }}
+</div>

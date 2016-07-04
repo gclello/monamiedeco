@@ -123,8 +123,12 @@
   }
 }
 
-#content-sidebar-wrapper {
+#wrapper {
   position: relative;
+  
+  div:first-child {
+    margin-top: 0;
+  }
 }
 
 #content {
@@ -132,10 +136,6 @@
   width: 100%;
   min-height: 25rem;
   margin-left: 0;
-
-  div:first-child {
-    margin-top: 0;
-  }
 }
 
 #sidebar {
@@ -224,19 +224,5 @@
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
-  }
-}
-
-#contact {
-  .content-card {
-    margin-top: 0;
-  }
-
-  p {
-    margin-top: $spacing-unit;
-  }
-
-  p:last-child {
-    margin-bottom: 0;
   }
 }

@@ -1,34 +1,18 @@
 ---
-layout: page
+layout: base
 ---
-<div class="row">
-{% if page.home %}
-    {% include banner.html %}
-{% else %}
-  <div class="banner-sm col-xs-12">Banner</div>
-{% endif %}
+<div id="content">
+  {{ content }}
 </div>
-<div class="row">
-  <div class="col-xs-12">
-    <div class="separator"></div>
-  </div>
-</div>
-<div class="row">
-  <div id="content-sidebar-wrapper">
-    <div id="content">
-    {{ content }}
-    </div>
-    <div id="sidebar">
-      <p class="author-img">
-        <a href="{% include site-url.html %}/sobre">
-          <img alt="{{ site.author }}"
-               src="{% include site-url.html %}/{{ site.authorimg }}" />
-        </a>
-      </p>
-      <p>
-        <a href="{% include site-url.html %}/sobre">{{ site.author }}</a>,
-        {{ site.authordesc }}
-      </p>
-    </div>
-  </div>
+<div id="sidebar">
+  <p class="author-img">
+    <a href="{% include siteurl.html %}/sobre">
+      <img alt="{{ site.author }}"
+           src="{% include siteurl.html %}/{{ site.authorimg }}" />
+    </a>
+  </p>
+  <p>
+    <a href="{% include siteurl.html %}/sobre">{{ site.author }}</a>,
+    {{ site.authordesc }}
+  </p>
 </div>
