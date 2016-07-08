@@ -3,13 +3,36 @@ article.content-card {
 }
 
 .postthumb {
-  float: left;
-  margin-right: $spacing-unit;
-  margin-bottom: $spacing-unit;
-
   img {
-    width: 27.5rem;
+    width: 100%;
   };
+}
+
+@include media-query($on-sm) {
+  .postthumb {
+    float: left;
+    margin-right: $spacing-unit;
+    margin-bottom: $spacing-unit;
+    img {
+      width: 17rem;
+    };
+  }
+}
+
+@include media-query($on-md) {
+  .postthumb {
+    img {
+      width: 20rem;
+    };
+  }
+}
+
+@include media-query($on-xl) {
+  .postthumb {
+    img {
+      width: 27rem;
+    };
+  }
 }
 
 .post-header {  
@@ -31,7 +54,7 @@ article.content-card {
   }
   
   img {
-    width: 860px;
+    width: 100%;
     margin-bottom: 1rem;
   }
 }
