@@ -9,7 +9,7 @@ excerpt: |
 
   <p>Antes de tudo, verifique quais as paredes que podem ser eliminadas. Nada de sair derrubando paredes estruturais, pilares ou vigas. Assim, você preserva a sua segurança e a dos demais moradores.</p>
 
-  <p>Como toda obra começa com planejamento...</p>
+  Como toda obra começa com planejamento, o primeiro passo é...
 thumb: integrada_balcao
 ---
 {% include postimg.html id="integrada" %}
@@ -36,7 +36,7 @@ Dica 2: Separação entre sala e cozinha
 
 Para fazer a separação sala/cozinha, você pode usar um balcão alto (estilo barzinho) ou simplesmente uma mesa.
 
-Não ouse muito nas alturas, para evitar problemas na hora de achar banquetas ou cadeiras compatíveis. A altura do balcão deve ser entre 1m e 1.10m e a da mesa convencional entre 70 e 75 cm. A diferença entre a bancada e o assento deve ser de aproximadamente 30 cm.
+Não ouse muito nas alturas, para evitar problemas na hora de achar banquetas ou cadeiras compatíveis. A altura do balcão deve ser entre 1m e 1,10m e a da mesa convencional entre 70 e 75 cm. A diferença entre a bancada e o assento deve ser de aproximadamente 30 cm.
 
 {% include postimg.html id="integrada_balcao" %}
 {% include postimg.html id="integrada_mesa" %}
