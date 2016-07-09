@@ -45,7 +45,21 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
-  height: 17rem;
+  height: $banner-height;
+}
+
+@include media-query($on-sm) {
+  .banner {
+    background-image: url($banner-img-sm);
+    height: $banner-height-sm;
+  }
+}
+
+@include media-query($on-md) {
+  .banner {
+    background-image: url($banner-img-md);
+    height: $banner-height-md;
+  }
 }
 
 .optin {

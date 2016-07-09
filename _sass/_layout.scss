@@ -75,9 +75,21 @@
 }
 
 @include media-query($on-md) {
-  #title a {
-    background-position: 0 0;
-    width: $logo-width;
+  #title {    
+    a {
+      background-position: 0 0;
+    }
+  }
+}
+
+@include media-query($on-lg) {
+  #title {
+    height: $logo-height-lg;
+    
+    a {
+      background-image: url($logo-img-lg);
+      height: $logo-height-lg;
+    }
   }
 }
 
@@ -196,6 +208,15 @@
   p {
     margin-top: 0;
     margin-bottom: 0;
+  }
+}
+
+@include media-query($on-lg) {
+  #footerlogo {    
+    a {
+      background-image: url($logo-img-lg);
+      height: $logo-height-lg;
+    }
   }
 }
 

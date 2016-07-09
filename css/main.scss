@@ -35,13 +35,21 @@ $spacing-unit:        1.250rem;
 $sidebar-width:       15.625rem;
 
 // Images
-$logo-img:           "{% include siteurl.html %}/assets/logo-web.png";
-$logo-height:        65px;
-$logo-width:         320px;
+$logo-img:            "{% include siteurl.html %}/assets/logo-web.jpg";
+$logo-height:         65px;
+$logo-img-lg:         "{% include siteurl.html %}/assets/logo-web-lg.jpg";
+$logo-height-lg:      81px;
+
+$banner-img:         "{% include siteurl.html %}/assets/banner.jpg";
+$banner-img-sm:      "{% include siteurl.html %}/assets/banner-sm.jpg";
+$banner-img-md:      "{% include siteurl.html %}/assets/banner-md.jpg";
+
+$banner-height:      160px;
+$banner-height-sm:   176px;
+$banner-height-md:   272px;
 
 $chandelier-img:     "{% include siteurl.html %}/assets/chandelier.jpg";
 $author-img:         "{% include siteurl.html %}/assets/sabry.png";
-$banner-img:         "{% include siteurl.html %}/assets/banner.png";
 
 // Devices
 $on-sm:              34rem;
