@@ -1,43 +1,25 @@
----
-layout: default
-home: true
----
-{% for post in site.posts %}
-<div class="content-card">
-
-  <h2>
-    <a href="{% include siteurl.html %}{{ post.url }}">{{ post.title }}</a>
-  </h2>
-
-  <p>
-    <span class="post-meta">
-      <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ post.date | date: "%e/%m/%Y" }},
-      </time>
-      {% if site.author %}
-      por
-      <a href="{% include siteurl.html %}/sobre">
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <span itemprop="name">
-            {{ site.author }}
-          </span>
-        </span>
-      </a>
-      {% endif %}
-    </span>
-  </p>
-
-  <div>
-    {% include postthumb.html post=post %}
-    <div>
-      <p>
-        {{ post.excerpt }}
-        <a href="{% include siteurl.html %}{{ post.url }}">
-          Continue lendo &raquo;
-        </a>
-      </p>
-    </div>
-  </div>
-
-</div>
-{% endfor %}
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mon Amie Déco</title>
+    <style>
+      .mon {
+        color: #792a4a;
+      }
+      .amie {
+        color: #b03d11;
+      }
+      .deco {
+        color: #335d69;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <span class="mon">Mon</span>
+      <span class="amie">Amie</span>
+      <span class="deco">Déco</span>
+    </h1>
+    <p>Em construção</p>
+  </body>
+</html>
