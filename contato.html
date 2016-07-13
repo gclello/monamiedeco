@@ -8,7 +8,6 @@ nameplaceholder: "Seu nome (obrigatório)"
 emailplaceholder: "Seu email (obrigatório)"
 subjectplaceholder: "Assunto"
 messageplaceholder: "Sua mensagem"
-formsubmittedurl: http://127.0.0.1:4000/
 ---
 <script language="javascript">
   var a = "&#x68;&#x74;&#x74;&#x70;&#x73;&#x3A;&#x2F;&#x2F;&#x66;&#x6F;&#x72;&#x6D;&#x73;&#x70;&#x72;&#x65;&#x65;&#x2E;&#x69;&#x6F;&#x2F;";
@@ -60,7 +59,7 @@ formsubmittedurl: http://127.0.0.1:4000/
               required></textarea>
   </p>
   <input type="text" name="_gotcha" style="display:none">
-  <input type="hidden" name="_next" value="{{ page.formsubmittedurl }}" />
+  <input type="hidden" name="_next" value="{% include siteurl.html %}/formulario-enviado" />
   <p>
     <button type="submit">Enviar</button>
   </p>
